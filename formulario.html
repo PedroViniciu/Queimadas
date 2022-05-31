@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário - Queimadas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='validacao.js'></script>
+</head>
+<body>
+            <p>NOME</p>
+				<input type="text" name="nome" id="nome">		
+			<p>SOBRENOME</p>
+				<input type="text" name="sobrenome" id="sobrenome">
+			<p>EMAIL</p>
+				<input type="email" name="email" placeholder="email@email.com" id="email">
+			<p>FONE</p>
+				<input type="text" name="Fone" placeholder="(43) 91234-5678" id="fone" onblur="maskFone()">
+			<p>CPF</p>
+				<input type="text" name="Cpf" placeholder="123.456.789-01" id="cpf">
+			<p>ASSUNTO</p>
+				<input type="text" name="assunto" id="ASSUNTO">
+			<p>DETALHES</p>
+				<input type="text" name="detalhes" id="DETALHES">
+			<p>CEP</p>
+				<input type="text" name="CEP" id="CEP">
+			<p>RUA</p>
+				<input type="text" name="RUA" id="RUA">
+			<p>BAIRRO</p>
+				<input type="text" name="BAIRRO" id="BAIRRO">
+			<p>NÚMERO</p>
+				<input type="text" name="NÚMERO" id="NUMERO">
+			<p>CIDADE</p>
+				<input type="text" name="CIDADE" id="CIDADE">
+			<p>ESTADO</p>
+				<input type="text" name="ESTADO" id="ESTADO">
+		</br>
+			<button class="btn btn-primary" onclick="verificar()">CADASTRAR</button>
+</body>
+</html>
