@@ -1,4 +1,5 @@
 /* CSS reset */
+
 *, *:before, *:after { 
     margin:0;
     padding:0;
@@ -6,8 +7,8 @@
   }
   
   body{
-    margin:10px;
-    background-image: url(fuegos.jpg);
+    margin: 10px;
+    background-color: #e49967;
   }
   
   a{
@@ -228,4 +229,11 @@
       transform: translateX(-20px);
     }
   }
-  
+  button{
+    background-color:rgb(139, 139, 139);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgb(139, 130, 139);
+    text-align: center;
+  }
