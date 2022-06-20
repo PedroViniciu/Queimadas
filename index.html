@@ -1,32 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Queimadas</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='mobile-navbar.js'></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='stilo.css'>
+  <script src='irMenu.js'></script>
 </head>
-<!--Menu superior Responsivo-->
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="">Contra-Fogo</a>
-            <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="denuncias.html">Denuncias</a></li>
-                <li><a href="form.html">Cadastro</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main></main>
-    <script src="mobile-navbar.js"></script>
+  
+
+  
+
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="email">Seu e-mail</label>
+            <input id="Email" name="email" required="required" type="text" placeholder="email@gmail.com"/>
+          </p>
+          
+          <p> 
+            <label for="senha">Sua senha</label>
+            <input id="Senha" name="senha"  type="password" placeholder="1234"> 
+          </p>
+          
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value=""> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+          
+          <p> 
+            <input type="button" onclick="verificar2()" value="Logar"> 
+          </p>
+          
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+          
+          <p> 
+            <label for="nome">Seu nome</label>
+            <input id="nome" name="nome"  type="text" placeholder="Luiz Augusto">
+          </p>
+          
+          <p> 
+            <label for="email">Seu e-mail</label>
+            <input id="email" name="email" type="email" placeholder="email@gmail.com"> 
+          </p>
+          
+          <p> 
+            <label for="senha">Sua senha</label>
+            <input id="senha" name="senha"  type="password" placeholder="1234">
+          </p>
+          
+          <p>
+            <input type="button" onclick="verificar()" value="Cadastrar"> 
+          </p>
+          
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <a href="file:///C:/Users/suporte.DESKTOP-IVRQ6M5/Documents/TCC/menu.html">
+    <button>Voltar</button>
+    </a> 
 </body>
 </html>

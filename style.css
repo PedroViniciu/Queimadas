@@ -4,7 +4,7 @@
 }
 
 a {
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     transition: 0.3s;
 }
@@ -24,13 +24,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: #ff9253;
+    background: #dad5d5;
     height: 8vh;
 }
 
 main {
     background: url("fuegos.jpg") no-repeat center center;
-    background-size: cover;
+    background: relative;
     height: 92vh;
 }
 
@@ -52,7 +52,7 @@ main {
 .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     margin: 8px;
 }
 
@@ -97,3 +97,21 @@ main {
         transform: translateX(0);
     }
 }
+.mapBox{
+    position: relative;
+    margin-top: 160px;
+    width: 1305px;
+    height: 500px;
+    background: #aa4d31;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px #000;
+    margin-left: 20px;
+    z-index: 10;
+  }
+
+  .mapBox iframe{
+    width: 92%;
+    height: 80%;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
